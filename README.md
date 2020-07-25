@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Set up
 
-Things you may want to cover:
 
-* Ruby version
+```
+docker-compose build
+docker-compose run --rm web bin/setup
+docker-compose run --rm web yarn install
+docker-compose up -d
+```
 
-* System dependencies
+Open http://localhost:3001/
 
-* Configuration
 
-* Database creation
+Following strings are shown.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+My journey with Vue
+Blogging with Vue
+Why Vue is so fun
+```
